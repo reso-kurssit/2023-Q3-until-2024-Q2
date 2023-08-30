@@ -17,11 +17,11 @@ Jos pelaajan vastaus ei ollut oikein, niin palataan kohtaan 2.
 
 Vinkkejä:
 -Tarvittavia muuttujia on siis vähintään 2, etsittävä luku ja palaajan arvaus.
--Satunnaislukugeneraattori löytyy standardikirjastoista cstdlib ja ctime. Nämä pitää siis #include-käskyillä tuoda ohjelmaan. 
-Generaattorista tarvitaan funktiot srand(), joka alustaa satunnaislukugeneraattorin ja rand(), joka arpoo luvun. 
+-targetNumbergeneraattori löytyy standardikirjastoista cstdlib ja ctime. Nämä pitää siis #include-käskyillä tuoda ohjelmaan. 
+Generaattorista tarvitaan funktiot srand(), joka alustaa targetNumbergeneraattorin ja rand(), joka arpoo luvun. 
 Arvotun luvun voi rajoittaa halutulle välille esim modulo-operaation=jakojäännös (%) avulla (10%3 = 1)
 -Ohjelmaa kirjoitettaessa ja testattaessa on syytä tulostaa cout:lla tietoa ruudulle. 
-Kannattanee aloittaa tuon satunnaislukugeneraattorin toiminnan testauksella ja todistaa itselleen, 
+Kannattanee aloittaa tuon targetNumbergeneraattorin toiminnan testauksella ja todistaa itselleen, 
 että generoitu ja esim modulo operaattorilla rajoitettu luku on välillä 1-20.
 
 Tee tehtävän 1 ohjelma oman funktion sisälle niin, että sitä kutsutaan main-funktiosta.
@@ -40,6 +40,8 @@ Käytä funktion nimenä ja prototyyppinä: int game(int maxnum);
 
 using namespace std;
 
+int game(int maxnum);
+
 int main()
 {
     localeFinnish();
@@ -47,26 +49,37 @@ int main()
     cout << "RANDMAX =" << RAND_MAX << "\n";
     cout << "Time =" << time(0) <<endl;
 
-    srand(time(0)); //satunnaislukugener.
+    srand(time(0)); // satunnaislukugen alustus
 
-    int satunnaisluku = rand() % 20 +1;
-    int kayttajanNumero;
+    int guesses = game(15);
+    
+    cout<<"Arvauksia laskettu = " << guesses << endl;
 
-    while (kayttajanNumero != satunnaisluku) 
+    return 0;
+
+}
+
+int game(int maxnum) 
+{
+    int targetNumber = rand() % maxnum +1;
+    int userNumber = -1;
+    int guesses = 0;
+
+    while (userNumber != targetNumber) 
     {
-        cout<<"Arvaa luku 1-20 väliltä " << endl;
-        cin >> kayttajanNumero;
+        cout<<"Arvaa luku 1-" << maxnum << " väliltä " << endl;
+        cin >> userNumber;
 
-        cout<<"Annoit numeron = "<< kayttajanNumero << endl;
+        guesses++;
 
-        if (kayttajanNumero != satunnaisluku) {
+        //cout<<"Annoit numeron = "<< userNumber << endl;
+
+        if (userNumber != targetNumber) {
             cout <<"Annoit väärän numeron! Arvaahan uudestaan" << endl;
         } else {
             cout << "Hei, sinä onnistuit! Valitsit oikean numeron!" << endl;
         }
     }
-    
-    
-    return 0;
 
+    return guesses;
 }
