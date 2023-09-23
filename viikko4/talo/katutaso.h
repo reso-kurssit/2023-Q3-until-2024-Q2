@@ -5,8 +5,6 @@
 #include "kerros.h"
 
 class katutaso:public kerros
-
-
 {
 public:
     katutaso(int);
@@ -17,7 +15,6 @@ public:
 
     void maaritaAsunnot() override;
     double laskeKulutus(double) override;
-
 };
 
 

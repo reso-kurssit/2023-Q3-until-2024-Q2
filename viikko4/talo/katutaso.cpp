@@ -1,6 +1,5 @@
 #include "katutaso.h"
 
-
 katutaso::katutaso(int kerrosNumero):kerros(kerrosNumero),
     as0a(asunto("0 A")),
     as0b(asunto("0 B"))

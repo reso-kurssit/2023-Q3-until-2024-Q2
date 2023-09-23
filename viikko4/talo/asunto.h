@@ -17,7 +17,6 @@ public:
 
 private:
     string asunnonTunniste;
-
 };
 
 #endif // ASUNTO_H

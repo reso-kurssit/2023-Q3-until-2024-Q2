@@ -20,7 +20,6 @@ void kerros::maaritaAsunnot()
     as2.maarita(2, 48);
     as3.maarita(2, 48);
     as4.maarita(2, 48);
-
 }
 
 double kerros::laskeKulutus(double h)

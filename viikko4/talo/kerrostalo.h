@@ -16,7 +16,6 @@ private:
     katutaso eka;
     kerros toka;
     kerros kolmas;
-
 };
 
 #endif // KERROSTALO_H
