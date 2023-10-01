@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         devicebaseclass.cpp \
+        devicedisplay.cpp \
         devicemouse.cpp \
         devicetouchpad.cpp \
         main.cpp \
@@ -12,6 +13,7 @@ SOURCES += \
 
 HEADERS += \
     devicebaseclass.h \
+    devicedisplay.h \
     devicemouse.h \
     devicetouchpad.h \
     mydeviceui.h

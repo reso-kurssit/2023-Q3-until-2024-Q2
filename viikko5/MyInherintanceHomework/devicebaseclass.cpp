@@ -2,14 +2,12 @@
 
 DeviceBaseClass::DeviceBaseClass()
 {
-
+    deviceID = -1;
 }
 
 void DeviceBaseClass::setDeviceID()
 {
-    cout << "Anna Device ID \n";
     cin >> deviceID;
-
 }
 
 short DeviceBaseClass::getDeviceID()

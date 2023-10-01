@@ -8,7 +8,7 @@ public:
     DeviceMouse();
     void setPrimaryButton();
     short getPrimaryButton();
-
+    string getPrimaryButtonAsText();
 private:
     short primaryButton;
 };
