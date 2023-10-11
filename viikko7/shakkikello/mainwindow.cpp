@@ -27,9 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->time300, &QPushButton::clicked, this, [=](){ this->handleTimer(300); });
 
     connect(ui->endTurnP1, SIGNAL(clicked(bool)), this, SLOT(handleTurns()));
-    //connect(ui->progressP1, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
     connect(ui->endTurnP2, SIGNAL(clicked(bool)), this, SLOT(handleTurns()));
-    //connect(ui->progressP2, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
 
     connect(pTimerP1, SIGNAL(timeout()), this, SLOT(update()));
     connect(pTimerP2, SIGNAL(timeout()), this, SLOT(update()));
@@ -50,12 +48,10 @@ void MainWindow::updateProgressBars()
 {
     ui->progressP1->setValue(timeLeftP1);
     ui->progressP2->setValue(timeLeftP2);
-
 }
 
 void MainWindow::startGame()
 {
-
     ui->titles->setText("Game ongoing, switch player via END TURN");
 
     pTimerP1->setInterval(1000);
@@ -134,12 +130,6 @@ void MainWindow::handleTimer(short gameTime)
     ui->time300->setDisabled(true);
 }
 
-void MainWindow::handlePlayers()
-{
-    // Player " " WON!
-    // kun peli päättyy ja joku pelaaja voittaa
-}
-
 void MainWindow::handleTurns()
 {
     ui->titles->setText("Switch player via END TURN");
@@ -152,11 +142,6 @@ void MainWindow::handleTurns()
     {
         pTimerP2->stop(); ui->endTurnP2->setDisabled(true); ui->endTurnP1->setDisabled(false); pTimerP1->start();
     }
-}
-
-void MainWindow::handleTitles()
-{
-    ui->titles->setText("joo5");
 }
 
 void MainWindow::start()
@@ -180,4 +165,17 @@ void MainWindow::update()
     }
 
     updateProgressBars();
+
+    if (timeLeftP1 == 0 && timeLeftP2 >= 1)
+    {
+        pTimerP1->stop();
+        ui->endTurnP1->setDisabled(true);
+        return  ui->titles->setText("Player 2. WON!");
+    }
+    else if (timeLeftP2 == 0 && timeLeftP1 >= 1)
+    {
+        pTimerP2->stop();
+        ui->endTurnP2->setDisabled(true);
+        return  ui->titles->setText("Player 1. WON!");
+    }
 }
