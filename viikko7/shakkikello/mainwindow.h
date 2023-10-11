@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QTimer>
+#include <QString>
+#include <QFont>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -33,7 +35,7 @@ public slots:
     void handleTimer(short);
     void handleTurns();
     void handlePlayers();
-    void titles();
+    void handleTitles();
 
     void start();
     void update();

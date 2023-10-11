@@ -16,6 +16,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->progressP1->setValue(100);
     ui->progressP2->setValue(100);
 
+    ui->titles->setText("Choose playtime before starting the game");
+    ui->titles->setAlignment(Qt::AlignCenter);
+
     connect(ui->start, SIGNAL(clicked(bool)), this, SLOT(startGame()));
     connect(ui->pause, SIGNAL(clicked(bool)), this, SLOT(pauseGame()));
     connect(ui->stop, SIGNAL(clicked(bool)), this, SLOT(stopGame()));
@@ -27,8 +30,6 @@ MainWindow::MainWindow(QWidget *parent)
     //connect(ui->progressP1, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
     connect(ui->endTurnP2, SIGNAL(clicked(bool)), this, SLOT(handleTurns()));
     //connect(ui->progressP2, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
-
-    //connect(ui->textLabel, SIGNAL(clicked(bool)), this, SLOT(handleTitles()));
 
     connect(pTimerP1, SIGNAL(timeout()), this, SLOT(update()));
     connect(pTimerP2, SIGNAL(timeout()), this, SLOT(update()));
@@ -49,19 +50,24 @@ void MainWindow::updateProgressBars()
 {
     ui->progressP1->setValue(timeLeftP1);
     ui->progressP2->setValue(timeLeftP2);
+
 }
 
 void MainWindow::startGame()
 {
+
+    ui->titles->setText("Game ongoing, switch player via END TURN");
+
     pTimerP1->setInterval(1000);
     pTimerP2->setInterval(1000);
 
-    ui->pause->setDisabled(false);
+    ui->pause->setDisabled(true);
+    ui->start->setDisabled(true);
     ui->stop->setDisabled(false);
     ui->time120->setDisabled(true);
     ui->time300->setDisabled(true);
 
-    if (currentPlayer == 1)
+    if (currentPlayer == 1 || currentPlayer == 0)
     {
         pTimerP1->start();
         ui->endTurnP1->setDisabled(false);
@@ -76,20 +82,18 @@ void MainWindow::startGame()
         pTimerP1->start();
         ui->endTurnP1->setDisabled(false);
     }
-
 }
 
 void MainWindow::stopGame()
 {
-
-    // edelleen tässä ongelmaa. Pitäisi saada "nollattua" kaikki siten, että kun aloittaa uuden pelin
-    // niin se aloittaa laskennan jälleen Pelaaja 1:stä, eikä siitä, kumman "vuoroon" jäi
+    ui->titles->setText("Reset game");
 
     pTimerP1->stop();
     pTimerP2->stop();
 
     ui->progressP1->setValue(0);
     ui->progressP2->setValue(0);
+    currentPlayer = 0;
 
     ui->endTurnP1->setDisabled(true);
     ui->endTurnP2->setDisabled(true);
@@ -110,6 +114,8 @@ void MainWindow::pauseGame()
 
 void MainWindow::handleTimer(short gameTime)
 {
+    ui->titles->setText("Ready to play, press CONTINUE to start");
+
     pTimerP1->stop();
     pTimerP2->stop();
 
@@ -124,16 +130,19 @@ void MainWindow::handleTimer(short gameTime)
     ui->start->setDisabled(false);
     ui->pause->setDisabled(true);
     ui->stop->setDisabled(true);
+    ui->time120->setDisabled(true);
+    ui->time300->setDisabled(true);
 }
 
 void MainWindow::handlePlayers()
 {
-
+    // Player " " WON!
+    // kun peli päättyy ja joku pelaaja voittaa
 }
 
 void MainWindow::handleTurns()
-
 {
+    ui->titles->setText("Switch player via END TURN");
 
     if (ui->endTurnP1 == sender())
     {
@@ -143,17 +152,11 @@ void MainWindow::handleTurns()
     {
         pTimerP2->stop(); ui->endTurnP2->setDisabled(true); ui->endTurnP1->setDisabled(false); pTimerP1->start();
     }
-
 }
 
-void MainWindow::titles()
+void MainWindow::handleTitles()
 {
-    // hox mahdollisesti lisää joku end game, reset tms, jos haluat pitää pausen ja continuen
-    // 1. Select playtime and press "START GAME"
-    // 2. Ready to play
-    // 3. Game ongoing
-    // 4. Player " " WON!
-    // 5. Reset game
+    ui->titles->setText("joo5");
 }
 
 void MainWindow::start()
@@ -163,7 +166,6 @@ void MainWindow::start()
 
 void MainWindow::update()
 {
-
     if (pTimerP1->isActive())
     {
         timeLeftP1--;
@@ -179,4 +181,3 @@ void MainWindow::update()
 
     updateProgressBars();
 }
-
