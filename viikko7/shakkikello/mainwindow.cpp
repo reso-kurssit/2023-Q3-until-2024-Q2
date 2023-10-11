@@ -49,9 +49,8 @@ void MainWindow::startGame()
     pTimerP1->setInterval(1000);
     pTimerP2->setInterval(1000);
 
-    handleTurns();
-
     pTimerP1->start();
+
     ui->endTurnP1->setDisabled(false);
     ui->endTurnP2->setDisabled(false);
 }
