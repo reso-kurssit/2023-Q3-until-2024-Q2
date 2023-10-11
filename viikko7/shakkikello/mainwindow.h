@@ -23,12 +23,13 @@ private:
     QTimer * pTimerP2;
     short timeLeftP1;
     short timeLeftP2;
-    //short * currentPlayer = &timeLeftP1;
     void updateProgressBars();
+    int currentPlayer;
 
 public slots:
     void startGame();
     void stopGame();
+    void pauseGame();
     void handleTimer(short);
     void handleTurns();
     void handlePlayers();

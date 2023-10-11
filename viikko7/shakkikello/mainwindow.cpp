@@ -17,20 +17,27 @@ MainWindow::MainWindow(QWidget *parent)
     ui->progressP2->setValue(100);
 
     connect(ui->start, SIGNAL(clicked(bool)), this, SLOT(startGame()));
+    connect(ui->pause, SIGNAL(clicked(bool)), this, SLOT(pauseGame()));
     connect(ui->stop, SIGNAL(clicked(bool)), this, SLOT(stopGame()));
 
     connect(ui->time120, &QPushButton::clicked, this, [=](){ this->handleTimer(120); });
     connect(ui->time300, &QPushButton::clicked, this, [=](){ this->handleTimer(300); });
 
     connect(ui->endTurnP1, SIGNAL(clicked(bool)), this, SLOT(handleTurns()));
-    connect(ui->progressP1, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
+    //connect(ui->progressP1, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
     connect(ui->endTurnP2, SIGNAL(clicked(bool)), this, SLOT(handleTurns()));
-    connect(ui->progressP2, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
+    //connect(ui->progressP2, SIGNAL(clicked(bool)), this, SLOT(handlePlayers()));
 
     //connect(ui->textLabel, SIGNAL(clicked(bool)), this, SLOT(handleTitles()));
 
     connect(pTimerP1, SIGNAL(timeout()), this, SLOT(update()));
     connect(pTimerP2, SIGNAL(timeout()), this, SLOT(update()));
+
+    ui->endTurnP1->setDisabled(true);
+    ui->endTurnP2->setDisabled(true);
+    ui->start->setDisabled(true);
+    ui->pause->setDisabled(true);
+    ui->stop->setDisabled(true);
 }
 
 MainWindow::~MainWindow()
@@ -49,13 +56,50 @@ void MainWindow::startGame()
     pTimerP1->setInterval(1000);
     pTimerP2->setInterval(1000);
 
-    pTimerP1->start();
+    ui->pause->setDisabled(false);
+    ui->stop->setDisabled(false);
+    ui->time120->setDisabled(true);
+    ui->time300->setDisabled(true);
 
-    ui->endTurnP1->setDisabled(false);
-    ui->endTurnP2->setDisabled(false);
+    if (currentPlayer == 1)
+    {
+        pTimerP1->start();
+        ui->endTurnP1->setDisabled(false);
+    }
+    else if (currentPlayer == 2)
+    {
+        pTimerP2->start();
+        ui->endTurnP2->setDisabled(false);
+    }
+    else
+    {
+        pTimerP1->start();
+        ui->endTurnP1->setDisabled(false);
+    }
+
 }
 
 void MainWindow::stopGame()
+{
+
+    // edelleen tässä ongelmaa. Pitäisi saada "nollattua" kaikki siten, että kun aloittaa uuden pelin
+    // niin se aloittaa laskennan jälleen Pelaaja 1:stä, eikä siitä, kumman "vuoroon" jäi
+
+    pTimerP1->stop();
+    pTimerP2->stop();
+
+    ui->progressP1->setValue(0);
+    ui->progressP2->setValue(0);
+
+    ui->endTurnP1->setDisabled(true);
+    ui->endTurnP2->setDisabled(true);
+    ui->start->setDisabled(true);
+    ui->pause->setDisabled(true);
+    ui->time120->setDisabled(false);
+    ui->time300->setDisabled(false);
+}
+
+void MainWindow::pauseGame()
 {
     pTimerP1->stop();
     pTimerP2->stop();
@@ -77,6 +121,9 @@ void MainWindow::handleTimer(short gameTime)
 
     ui->endTurnP1->setDisabled(true);
     ui->endTurnP2->setDisabled(true);
+    ui->start->setDisabled(false);
+    ui->pause->setDisabled(true);
+    ui->stop->setDisabled(true);
 }
 
 void MainWindow::handlePlayers()
@@ -85,6 +132,7 @@ void MainWindow::handlePlayers()
 }
 
 void MainWindow::handleTurns()
+
 {
 
     if (ui->endTurnP1 == sender())
@@ -119,11 +167,13 @@ void MainWindow::update()
     if (pTimerP1->isActive())
     {
         timeLeftP1--;
+        currentPlayer = 1;
         qDebug() << "Time left (P1) = " << timeLeftP1 ;
     }
     else if (pTimerP2->isActive())
     {
         timeLeftP2--;
+        currentPlayer = 2;
         qDebug() << "Time left (P2) = " << timeLeftP2 ;
     }
 
