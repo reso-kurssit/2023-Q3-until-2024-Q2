@@ -1,7 +1,7 @@
 # 2024-Q1-WEB-SOVELLUKSET
 
-**Tämä alikansio on osa kurssit-päärepositiotani**
-- Tänne kokoan tekemäni viikkotehtävät sekä harjoitustyn kurssilta Web-sovellusten perusteet
+**Tämä kuuluu osaksi päärepositiotani, johon kokoan käymieni kurssien tehtäviä ja harjoituksia**
+- Lisään tänne tekemäni viikkotehtävät sekä harjoitustyön kurssilta Web-sovellusten perusteet.
 
 # Viikkotehtävät ja harjoitustyö
 
