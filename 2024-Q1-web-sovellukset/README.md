@@ -9,9 +9,9 @@
 - harkka
     - *selite*
 - viikko1
-    - *Hau-ska sivu (esittelyssä koira ja jotain)*
+    - *Hau-ska sivu: Esittelyssä koira ja jotain*
 - viikko2
-    - *Horizontal menu: hieman CSS-muotoilua*
+    - *Horizontal menu: Hieman CSS-muotoilua*
 - viikko3
     - *Oulun amk: CSS-muotoilu jatkuu*
 - viikko4
