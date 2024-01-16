@@ -1,0 +1,56 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #dice {
+        margin-top: 5px;
+        img {
+            width: 180px;
+            border-radius: 8px;
+        }
+    }
+}
+
+label {
+    display: inline-block;
+    padding: 16px 32px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+input {
+    padding-left: 15px;
+    width: 90px;
+    height: 45px;
+    border-radius: 4px;
+
+}
+
+input:focus {
+    background-color: #cce9c3;
+  }
+
+button {
+    background-color: #196402;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #35b30d;
+}
+
+h3 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3em;
+    color: #722457;
+}
