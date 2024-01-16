@@ -9,15 +9,20 @@
 - harkka
     - *selite*
 - viikko1
-    - *Hau-ska sivu: Esittelyssä koira ja jotain*
+    - *Hau-ska sivu:*
+    - *Esittelyssä koira ja jotain*
 - viikko2
-    - *Horizontal menu: Hieman CSS-muotoilua*
+    - *Horizontal menu:*
+    - *Hieman CSS-muotoilua*
 - viikko3
-    - *Oulun amk: CSS-muotoilu jatkuu*
+    - *Oulun amk:*
+    - *CSS-muotoilu jatkuu*
 - viikko4
-    - *Responsive sample page: Responsiivisuutta* 
+    - *Responsive sample page:*
+    - *Responsiivisuutta* 
 - viikko5
-    - *selite* 
+    - *Noppa:*
+    - *JavaScript -perusteita ja niihin liittyvän noppa-tehtävän palautus*
 - viikko6
     - *selite* 
 - viikko7
