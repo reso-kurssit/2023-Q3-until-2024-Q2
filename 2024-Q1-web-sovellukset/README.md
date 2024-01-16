@@ -7,15 +7,15 @@
 
 **Poluissa**
 - harkka
-    - *selite* 
+    - *selite*
 - viikko1
-    - *selite* 
+    - *Hau-ska sivu: Esittelyssä koira ja jotain*
 - viikko2
-    - *selite* 
+    - *Horizontal menu: Hieman CSS-muotoilua*
 - viikko3
-    - *selite* 
+    - *Oulun amk: CSS-muotoilu jatkuu*
 - viikko4
-    - *selite* 
+    - *Responsive sample page: Responsiivisuutta* 
 - viikko5
     - *selite* 
 - viikko6
