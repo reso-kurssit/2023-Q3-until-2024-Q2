@@ -1,0 +1,74 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+
+#container {
+  margin-left: 30px;
+}
+
+input {
+  font-size: 1.1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  width: 630px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: #e8eff6;
+}
+
+span {
+  color: #14283e;
+}
+
+span:hover {
+  color: #9ccbfc;
+}
+
+@keyframes colorWave {
+  0% {
+    color: #722457;
+  }
+  50% {
+    color: #1b3857;
+  }
+  100% {
+    color: #722457;
+  }
+}
+h3 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 3em;
+  color: #722457;
+  animation: colorWave 5s infinite linear;
+}
+
+article {
+  display: block;
+}
+
+table, th, td {
+  margin-bottom: 30px;
+  width: 660px;
+  border: 1px solid #4e4e4e;
+  border-collapse: collapse;
+  word-break: break-all;
+  font-size: 1em;
+  padding: 18px;
+  margin: 0;
+}
+table a, th a, td a {
+  text-decoration: none;
+  color: #000000;
+}
+table a:hover, th a:hover, td a:hover {
+  color: #722457;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}/*# sourceMappingURL=style.css.map */
