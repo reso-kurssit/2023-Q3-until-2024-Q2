@@ -24,7 +24,8 @@
     - *Noppa:*
     - *JavaScript -perusteita ja niihin liittyvän noppa-tehtävän palautus*
 - viikko6
-    - *selite* 
+    - *My Todos:*
+    - *JS -ominaisuuksiin tutustuminen jatkuu tehtävälista-harjoituksen muodossa*  
 - viikko7
     - *selite* 
 - viikko8
