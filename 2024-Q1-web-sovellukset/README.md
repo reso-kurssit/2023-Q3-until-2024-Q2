@@ -27,6 +27,7 @@
     - *My Todos:*
     - *JS -ominaisuuksiin tutustuminen jatkuu tehtävälista-harjoituksen muodossa*  
 - viikko7
-    - *selite* 
+    - *Painter:*
+    - *Oliota mukaan, ja tehtävänä piirto-ohjelma* 
 - viikko8
     - _selite_ 
