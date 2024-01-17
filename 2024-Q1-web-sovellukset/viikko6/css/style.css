@@ -47,10 +47,6 @@ h3 {
   animation: colorWave 5s infinite linear;
 }
 
-article {
-  display: block;
-}
-
 table, th, td {
   margin-bottom: 30px;
   width: 660px;

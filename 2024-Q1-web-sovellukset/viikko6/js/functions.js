@@ -3,17 +3,17 @@ input.maxLength = 50;
 const list = document.querySelector('table')
 const sort = document.querySelector('span')
 const todos = []
-const colgroup = document.createElement('colgroup');
-const col1 = document.createElement('col');
-const col2 = document.createElement('col');
+const colgroup = document.createElement('colgroup')
+const col1 = document.createElement('col')
+const col2 = document.createElement('col')
 
-col1.style.width = '10%';
-col2.style.width = '90%';
+col1.style.width = '10%'
+col2.style.width = '90%'
 
-colgroup.appendChild(col1);
-colgroup.appendChild(col2);
+colgroup.appendChild(col1)
+colgroup.appendChild(col2)
 
-list.appendChild(colgroup);
+list.appendChild(colgroup)
 
 const addRow = () => {
     const newTodo = input.value
@@ -26,7 +26,7 @@ const addRow = () => {
     col1.innerHTML = '<a href="#" onClick="deleteRow(\'' + newTodo + '\')">X</a>'
     col2.innerHTML = newTodo
 
-    input.maxLength = 50;
+    input.maxLength = 50
     input.value = ''
 }
 
@@ -44,12 +44,12 @@ const deleteRow = (todo) => {
 }
 
 const addTableRow = (text) => {
-    const row = list.insertRow();
-    const col1 = row.insertCell(0);
-    const col2 = row.insertCell(1);
+    const row = list.insertRow()
+    const col1 = row.insertCell(0)
+    const col2 = row.insertCell(1)
 
-    col1.innerHTML = '<a href="#" onClick="deleteRow(\'' + text + '\')">X</a>'; 
-    col2.innerHTML = text;
+    col1.innerHTML = '<a href="#" onClick="deleteRow(\'' + text + '\')">X</a>'
+    col2.innerHTML = text
 }
 
 sort.addEventListener ('click', () => {
