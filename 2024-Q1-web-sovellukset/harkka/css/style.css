@@ -1,0 +1,616 @@
+@charset "UTF-8";
+/* Unicode-hex v 15.1 */
+.custom-emoji-1::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🤭";
+}
+
+.custom-emoji-2::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥰";
+}
+
+.custom-emoji-3::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "😅";
+}
+
+.custom-emoji-4::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍿";
+}
+
+.custom-emoji-10::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍇";
+}
+
+.custom-emoji-11::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍉";
+}
+
+.custom-emoji-12::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍊";
+}
+
+.custom-emoji-13::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍌";
+}
+
+.custom-emoji-14::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍎";
+}
+
+.custom-emoji-15::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍓";
+}
+
+.custom-emoji-16::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥕";
+}
+
+.custom-emoji-17::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥦";
+}
+
+.custom-emoji-18::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🫛";
+}
+
+.custom-emoji-19::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍞";
+}
+
+.custom-emoji-20::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥞";
+}
+
+.custom-emoji-21::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🧀";
+}
+
+.custom-emoji-22::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍖";
+}
+
+.custom-emoji-23::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍗";
+}
+
+.custom-emoji-24::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍩";
+}
+
+.custom-emoji-25::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥓";
+}
+
+.custom-emoji-26::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍕";
+}
+
+.custom-emoji-27::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🌮";
+}
+
+.custom-emoji-28::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥚";
+}
+
+.custom-emoji-29::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🥗";
+}
+
+.custom-emoji-30::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍿";
+}
+
+.custom-emoji-31::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍡";
+}
+
+.custom-emoji-32::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍦";
+}
+
+.custom-emoji-33::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍩";
+}
+
+.custom-emoji-34::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍪";
+}
+
+.custom-emoji-35::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍰";
+}
+
+.custom-emoji-36::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍨";
+}
+
+.custom-emoji-37::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "☕";
+}
+
+.custom-emoji-38::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🍹";
+}
+
+.custom-emoji-39::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏔";
+}
+
+.custom-emoji-40::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏖";
+}
+
+.custom-emoji-41::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏞";
+}
+
+.custom-emoji-42::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏘";
+}
+
+.custom-emoji-43::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏡";
+}
+
+.custom-emoji-44::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏥";
+}
+
+.custom-emoji-45::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏦";
+}
+
+.custom-emoji-46::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏩";
+}
+
+.custom-emoji-47::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏫";
+}
+
+.custom-emoji-48::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "🏪";
+}
+
+.custom-emoji-49::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 24px;
+  content: "😍";
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100wh;
+  margin: 0;
+  background-color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+
+#error-msg {
+  display: none;
+}
+
+#header {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#header img {
+  z-index: 1;
+}
+
+#colorbar {
+  position: absolute;
+  top: 420px;
+  left: 0;
+  height: 190px;
+  width: 100vw;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background: linear-gradient(to right, #095fcf, #14345e);
+  z-index: 2;
+  opacity: 0.9;
+}
+
+#container {
+  margin: 0 auto;
+  margin-top: 22px;
+  padding-top: 44px;
+  width: 100vw;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+#container #content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#container .content-box {
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #f8e4cc;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border: 2px solid #d77809;
+  border-radius: 8px;
+  font-weight: 600;
+  font-style: italic;
+  color: #131b39;
+}
+#container .seppo-container {
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #f8e4cc;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border: 2px solid #d77809;
+  border-radius: 8px;
+  font-weight: 600;
+  font-style: italic;
+  color: #131b39;
+}
+
+#ballgame {
+  position: relative;
+  padding-top: 60px;
+}
+#ballgame #ballgame-jump {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+}
+#ballgame #ballgame-ball {
+  position: absolute;
+  bottom: 100px;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #5fb438;
+  border: 2px solid #1d3c10;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+img.tiny {
+  border: 1px dashed #2c2c2c;
+  border-radius: 8px;
+}
+
+.page {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+ul.navi {
+  list-style-type: none;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  animation: headerWave 5s infinite linear;
+  position: absolute;
+  text-align: center;
+  top: 500px;
+  z-index: 3;
+}
+
+ul.navi li {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: #02142c;
+}
+
+@keyframes headerWave {
+  0% {
+    color: #e08918;
+  }
+  50% {
+    color: #dab05e;
+  }
+  100% {
+    color: #e08918;
+  }
+}
+input:focus {
+  background-color: #e8eff6;
+}
+
+span {
+  color: #14283e;
+}
+
+span:hover {
+  color: #9ccbfc;
+}
+
+@keyframes colorWave {
+  0% {
+    color: #722457;
+  }
+  50% {
+    color: #1b3857;
+  }
+  100% {
+    color: #722457;
+  }
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.8em;
+  color: #ffffff;
+  animation: headerWave 5s infinite linear;
+  position: absolute;
+  text-align: center;
+  top: 385px;
+  z-index: 3;
+}
+
+h2 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2em;
+  color: #722457;
+  animation: colorWave 5s infinite linear;
+}
+
+h3 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2em;
+  color: #d85b00;
+}
+
+h4 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2em;
+  color: #284871;
+}
+
+input {
+  font-size: 1.1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  width: 630px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+table, th, td {
+  margin-bottom: 30px;
+  border: 1px solid #4e4e4e;
+  border-collapse: collapse;
+  word-break: break-all;
+  font-size: 1em;
+  padding: 18px;
+  margin: 0;
+}
+table a, th a, td a {
+  text-decoration: none;
+  color: #000000;
+}
+table a:hover, th a:hover, td a:hover {
+  color: #722457;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#healthbar {
+  height: 25px;
+  border: 1px solid #000000;
+  max-width: 200px;
+}
+#healthbar #current-health {
+  height: 25px;
+  width: 0%;
+  transition: width 0.5s;
+}
+#healthbar #current-health #healthtext {
+  padding: 85px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 992px) {
+  #header img {
+    width: 500px;
+  }
+  #container {
+    width: 100vw;
+  }
+  #colorbar {
+    top: 390px;
+    height: 160px;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 2.9em;
+    top: 375px;
+  }
+  ul.navi {
+    font-size: 1.6em;
+    top: 460px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #header img {
+    width: 400px;
+  }
+  #container {
+    width: 100vw;
+  }
+  #colorbar {
+    top: 300px;
+    height: 140px;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 2.7em;
+    top: 295px;
+  }
+  ul.navi {
+    font-size: 1.2em;
+    top: 370px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #header img {
+    width: 290px;
+  }
+  #container {
+    width: 100vw;
+    font-size: 0.8em;
+  }
+  #colorbar {
+    top: 220px;
+    height: 110px;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 2.1em;
+    top: 210px;
+  }
+  ul.navi {
+    font-size: 0.9em;
+    top: 280px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    margin-top: 25px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  #error-msg {
+    display: block;
+  }
+  #header {
+    display: none;
+  }
+  #header img {
+    display: none;
+  }
+  #container {
+    display: none;
+  }
+  #content {
+    display: none;
+  }
+  #colorbar {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

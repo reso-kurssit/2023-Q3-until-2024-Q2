@@ -1,0 +1,201 @@
+/* Unicode-hex v 15.1 */
+
+$emoji-font-family: 'Noto Color Emoji', sans-serif;
+$emoji-font-size: 24px;
+
+@mixin emoji-style($content) {
+    &::before {
+      font-family: $emoji-font-family;
+      font-size: $emoji-font-size;
+      content: $content;
+    }
+  }
+
+.custom-emoji-1 {
+  @include emoji-style("\1F92D"); 
+}
+
+.custom-emoji-2 {
+  @include emoji-style("\1F970"); 
+}
+
+.custom-emoji-3 {
+  @include emoji-style("\1F605"); 
+}
+
+.custom-emoji-4 {
+  @include emoji-style("\1F37F"); 
+}
+
+// Ruoka 
+
+.custom-emoji-10 {
+  @include emoji-style("\1F347"); 
+}
+
+.custom-emoji-11 {
+  @include emoji-style("\1F349"); 
+}
+
+.custom-emoji-12 {
+  @include emoji-style("\1F34A"); 
+}
+
+.custom-emoji-13 {
+  @include emoji-style("\1F34C"); 
+}
+
+.custom-emoji-14 {
+  @include emoji-style("\1F34E"); 
+}
+
+.custom-emoji-15 {
+  @include emoji-style("\1F353"); 
+}
+
+.custom-emoji-16 {
+  @include emoji-style("\1F955"); 
+}
+
+.custom-emoji-17 {
+  @include emoji-style("\1F966"); 
+}
+
+.custom-emoji-18 {
+  @include emoji-style("\1FADB"); 
+}
+
+.custom-emoji-19 {
+  @include emoji-style("\1F35E"); 
+}
+
+.custom-emoji-20 {
+  @include emoji-style("\1F95E"); 
+}
+
+.custom-emoji-21 {
+  @include emoji-style("\1F9C0"); 
+}
+
+.custom-emoji-22 {
+  @include emoji-style("\1F356"); 
+}
+
+.custom-emoji-23 {
+  @include emoji-style("\1F357"); 
+}
+
+.custom-emoji-24 {
+  @include emoji-style("\1F369"); 
+}
+
+.custom-emoji-25 {
+  @include emoji-style("\1F953"); 
+}
+
+.custom-emoji-26 {
+  @include emoji-style("\1F355"); 
+}
+
+.custom-emoji-27 {
+  @include emoji-style("\1F32E"); 
+}
+
+.custom-emoji-28 {
+  @include emoji-style("\1F95A"); 
+}
+
+.custom-emoji-29 {
+  @include emoji-style("\1F957"); 
+}
+
+.custom-emoji-30 {
+  @include emoji-style("\1F37F"); 
+}
+
+.custom-emoji-31 {
+  @include emoji-style("\1F361"); 
+}
+
+.custom-emoji-32 {
+  @include emoji-style("\1F366"); 
+}
+
+.custom-emoji-33 {
+  @include emoji-style("\1F369"); 
+}
+
+.custom-emoji-34 {
+  @include emoji-style("\1F36A"); 
+}
+
+.custom-emoji-35 {
+  @include emoji-style("\1F370"); 
+}
+
+.custom-emoji-36 {
+  @include emoji-style("\1F368"); 
+}
+
+.custom-emoji-37 {
+  @include emoji-style("\2615"); 
+}
+
+.custom-emoji-38 {
+  @include emoji-style("\1F379"); 
+}
+
+
+// Paikat
+
+.custom-emoji-39 {
+  @include emoji-style("\1F3D4"); 
+}
+
+.custom-emoji-40 {
+  @include emoji-style("\1F3D6"); 
+}
+
+.custom-emoji-41 {
+  @include emoji-style("\1F3DE"); 
+}
+
+.custom-emoji-42 {
+  @include emoji-style("\1F3D8"); 
+}
+
+.custom-emoji-43 {
+  @include emoji-style("\1F3E1"); 
+}
+
+.custom-emoji-44 {
+  @include emoji-style("\1F3E5"); 
+}
+
+.custom-emoji-45 {
+  @include emoji-style("\1F3E6"); 
+}
+
+.custom-emoji-46 {
+  @include emoji-style("\1F3E9"); 
+}
+
+.custom-emoji-47 {
+  @include emoji-style("\1F3EB"); 
+}
+
+.custom-emoji-48 {
+  @include emoji-style("\1F3EA"); 
+}
+
+.custom-emoji-49 {
+  @include emoji-style("\1F60D"); 
+}
+
+
+// Jemmaan esim. ruoka- ja juomaemojit, maisemat, paikat
+// Sääolosuhteet (sääkartalle)
+// nuolet? ehkä
+// cross mark 274C
+// suomilippu 1F1EB  / 1F1EE
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Selainlemmikki Seppo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Dancing+Script&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="error-msg">
+            <img class="tiny" src="./img/cry.png" />
+            <p>Liian pieni ruutu.</p>
+            <p>Sivustoa ei voida avata.</p>
+        </div>
+
+        <div id="colorbar"></div>
+
+            <div id="header">
+                <img src="./img/seppo2.png" />
+                <h1>Selainlemmikki Seppo</h1>
+                <ul class="navi">
+                    <li class=""><a href="index.html">Etusivu</a></li>
+                    <li class=""><a href="ruoki.html">Ruoki</a></li>
+                    <li class=""><a href="pelaa.html">Pelaa</a></li>
+                    <li class=""><a href="ulkoile.html">Ulkoile</a></li>
+                    <li class=""><a href="random.html">Random</a></li>
+                </ul>
+            </div>
+
+            <div id="container" class="shadow">
+
+                <div class="seppo-container seppo-waiting" id="seppo-status">
+                    <!-- Random-Seppo -->
+                </div>
+
+                <div id="content">
+                    <h3>Sepon ruokinta</h3>
+
+                    <div class="page">
+
+                        <div id="healthbar">
+                            <div id="current-health">
+                                <span id="healthtext">0%</span>
+                            </div>
+                        </div> 
+                        
+                        <p>Seppo tarvitsee energiaa jaksaakseen leikkiä ja ulkoilla ja kaikki tekeminen toki myös kuluttaa sitä. Energiaa Seppo saa ruoasta.</p>
+                        <p>Nykyisen energiatason näet yläpuolella olevasta palkista. </p>
+                        <p>Mikäli Sepolle tulee energiavaje, niin se ei jaksa oikein osallistua aktiviteetteihin ja haluaisi vain nukkua. </p>
+                        <p>Muistathan siis huolehtia, että energiataso pysyy riittävän korkeana, mieluiten vihreällä tasolla.  </p>
+                        
+                    </div>
+
+                    <h4>Tänään tarjolla</h4>
+
+                    <div class="page">
+
+                        <p>Valitse näistä saatavilla olevista vaihtoehdoista Sepolle maittava ateria. <i>Vinkki: Seppo suosii lihapitoisia ruokia ja on myös aikamoinen herkkusuu.</i></p>
+                            
+                        <span class="custom-emoji-32" onclick="feedSeppo('custom-emoji-32')"></span> 
+                        <span class="custom-emoji-17" onclick="feedSeppo('custom-emoji-17')"></span> 
+                        <span class="custom-emoji-22" onclick="feedSeppo('custom-emoji-22')"></span> 
+                        <span class="custom-emoji-12" onclick="feedSeppo('custom-emoji-12')"></span> 
+                        <span class="custom-emoji-26" onclick="feedSeppo('custom-emoji-26')"></span> 
+                        <span class="custom-emoji-29" onclick="feedSeppo('custom-emoji-29')"></span> 
+                        <span class="custom-emoji-35" onclick="feedSeppo('custom-emoji-35')"></span> 
+                        <span class="custom-emoji-14" onclick="feedSeppo('custom-emoji-14')"></span> 
+                        <span class="custom-emoji-23" onclick="feedSeppo('custom-emoji-23')"></span> 
+                        <span class="custom-emoji-37" onclick="feedSeppo('custom-emoji-37')"></span> 
+                        <span class="custom-emoji-30" onclick="feedSeppo('custom-emoji-30')"></span> 
+                        <span class="custom-emoji-38" onclick="feedSeppo('custom-emoji-38')"></span> 
+                        <span class="custom-emoji-13" onclick="feedSeppo('custom-emoji-13')"></span> 
+                        <span class="custom-emoji-19" onclick="feedSeppo('custom-emoji-19')"></span> 
+                        <span class="custom-emoji-27" onclick="feedSeppo('custom-emoji-27')"></span> 
+                        <span class="custom-emoji-16" onclick="feedSeppo('custom-emoji-16')"></span> 
+                        <span class="custom-emoji-36" onclick="feedSeppo('custom-emoji-36')"></span> 
+                        <span class="custom-emoji-33" onclick="feedSeppo('custom-emoji-33')"></span> 
+                        <span class="custom-emoji-21" onclick="feedSeppo('custom-emoji-21')"></span> 
+                        <span class="custom-emoji-18" onclick="feedSeppo('custom-emoji-18')"></span> 
+                        <span class="custom-emoji-24" onclick="feedSeppo('custom-emoji-24')"></span> 
+                        <span class="custom-emoji-20" onclick="feedSeppo('custom-emoji-20')"></span> 
+                        <span class="custom-emoji-31" onclick="feedSeppo('custom-emoji-31')"></span> 
+                        <span class="custom-emoji-25" onclick="feedSeppo('custom-emoji-25')"></span> 
+                        <span class="custom-emoji-34" onclick="feedSeppo('custom-emoji-34')"></span> 
+                        <span class="custom-emoji-15" onclick="feedSeppo('custom-emoji-15')"></span> 
+                        <span class="custom-emoji-28" onclick="feedSeppo('custom-emoji-28')"></span> 
+                        <span class="custom-emoji-10" onclick="feedSeppo('custom-emoji-10')"></span> 
+                        <span class="custom-emoji-11" onclick="feedSeppo('custom-emoji-11')"></span>
+                        
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div id="footer"></div>
+
+        <script src="./js/store-health.js"></script>
+        <script src="./js/random.js"></script>
+        <script src="./js/feed-seppo.js"></script>
+        <script src="./js/ballgame.js"></script>
+        
+    </body>
+</html>
