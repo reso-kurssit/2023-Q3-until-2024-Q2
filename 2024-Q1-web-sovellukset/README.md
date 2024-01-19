@@ -7,7 +7,14 @@
 
 **Poluissa**
 - harkka
-    - *selite*
+    - *Selainlemmikki Seppo:*
+    - *Päätin tehdä harjoitustyönä virtuaalisen koirakamun, jonka nimi on Seppo.*
+    - *Seppo tarvitsee ruokaa, jotta terveyspalkki kasvaa aktiviteetteihin.*
+    - *Terveyspalkin tilanne tallennetaan local storageen.*
+    - *Sepolla on "mielialoja" ja se ilmaisee, esimerkiksi seuraavasti;*
+    - *Jos ei suostu syömään jotain ruokaa tai halua lähteä ulos (huono sää) tai jaksa puuhastella (energiavaje).*
+    - *Reaktiot myös onnistumisiin, random-seppo-toimintoa yms.*
+    - *Responsiivisuutta haettu eri kokoisille ruuduille*
 - viikko1
     - *Hau-ska sivu:*
     - *Esittelyssä koira ja jotain*
