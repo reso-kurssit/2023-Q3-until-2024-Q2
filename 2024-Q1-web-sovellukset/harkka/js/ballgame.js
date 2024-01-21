@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (seppo.getHealth() <= 20) {
         useSleepImages();
+        document.querySelector('button').disabled = true;
+        document.querySelector('input').disabled = true;
+        document.querySelector('input').value = 'Ruoki Seppo';
+
+
     } else if (seppo.getHealth() >= 20.01) {
         ball;
         jump;
@@ -27,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateHealth() {
-        var health = seppo.getHealth() -3; 
-
+        var health = seppo.getHealth() -8; 
+        
         if (health <= 20) {
             useSleepImages();
         }
@@ -47,5 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('seppo-container').style.display = 'none';
     }
 
-
 });
+
+document.querySelector('button').addEventListener('click', () => {
+    seppo.setHealth(seppo.getHealth() -1);
+    const answer = Number(document.querySelector('input').value);
+    const correctAnswer = 4;
+    
+    if (answer === correctAnswer) {
+        alert ('Vastasit oikein, 4 linkkiä piilotettu');
+    } else {
+        alert ('Vastasit väärin, yritä uudelleen')
+    }
+
+})
+

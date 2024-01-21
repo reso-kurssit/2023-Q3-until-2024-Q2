@@ -21,7 +21,7 @@ function feedSeppo(food) {
         var dislikedFoods = ["custom-emoji-10", "custom-emoji-11", "custom-emoji-12", "custom-emoji-13", "custom-emoji-14", "custom-emoji-15", "custom-emoji-16", "custom-emoji-17", "custom-emoji-18", "custom-emoji-19", "custom-emoji-29", "custom-emoji-37", "custom-emoji-38"];
 
         if (likedFoods.includes(food)) {
-            seppo.setHealth(seppo.getHealth() +4);
+            seppo.setHealth(seppo.getHealth() +6);
             updateHealthBar();
             useEatsImages();
         } else if (dislikedFoods.includes(food)) {

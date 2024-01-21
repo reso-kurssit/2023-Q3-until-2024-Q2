@@ -54,6 +54,8 @@ body {
         padding-left: 20px;
         padding-right: 20px; 
         padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
     }
     .content-box {
         padding: 10px;
@@ -119,6 +121,14 @@ img.tiny {
     padding-right: 50px;
 }
 
+.aside {
+    margin: 0 auto;
+    width: 20%;
+    margin-right: 20px;
+    border-left: 1px dashed #9a9a9a;
+    padding-left: 22px; 
+}
+
 .hide {
     display: none;
 }
@@ -148,6 +158,10 @@ ul a {
 ul a:hover {
     text-decoration: none;
     color: #02142c;
+}
+
+a {
+    text-decoration: none;
 }
 
 @keyframes headerWave {
@@ -216,6 +230,12 @@ h4 {
     color: #284871;
 }
 
+h5 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2em;
+    color: #284871;
+}
+
 input {
     font-size: 1.1em;
     padding-left: 15px;
@@ -259,7 +279,6 @@ tr:nth-child(even) {
     #current-health {
         height: 25px;
         width: 0%; 
-        //background-color: #4CAF50; 
         transition: width 0.5s;
         #healthtext {
             padding: 85px;
@@ -267,5 +286,30 @@ tr:nth-child(even) {
         }
     }
 }
+
+input {
+    padding-left: 15px;
+    width: 120px;
+    height: 45px;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    background-color: #dce5f4;
+  }
+  
+  button {
+    background-color: #284784;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 16px 32px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #6d8dcb;
+  }
+  
 
 @import "media-query";
