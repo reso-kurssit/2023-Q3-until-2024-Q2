@@ -32,16 +32,19 @@ var seppoPairs = [
     { image: "./img/frustrated.png", message: "Tiekkö, että tuo ei oikeen maistu..", category: "seppo-eats-deny" },
     { image: "./img/frustrated.png", message: "Käviskö koiranruoka tähteiden sijaan?", category: "seppo-eats-deny" },
     // seppo-walks + seppo-walks-deny ( + some random)
-    { image: "./img/angry.png", message: "En todellakaan lähe mihinkään ulos tolla kelillä!", category: "seppo-walks" },
-    { image: "./img/angry.png", message: "Mee vaan keskenäs, ootko kattonu säätä viimeaikoina??", category: "seppo-walks" },
+    { image: "./img/angry.png", message: "En todellakaan lähe mihinkään ulos tolla kelillä!", category: "seppo-walks-deny" },
+    { image: "./img/angry.png", message: "Mee vaan keskenäs, ootko kattonu säätä viimeaikoina??", category: "seppo-walks-deny" },
     { image: "./img/butt.png", message: "Täs mä vaan kävelen...", category: "seppo-random", category: "seppo-walks" },
-    { image: "./img/frighten.png", message: "Ihan aivan totaalisen kamala keli!", category: "seppo-walks" },
-    { image: "./img/frustrated.png", message: "Ei tuonne uskalla mennä.. oisko huomenna parempi keli?", category: "seppo-walks" },
-    { image: "./img/frustrated.png", message: "Älä pliiiiiis pakota mua lähtee ulos tällä säällä", category: "seppo-walks" },
-    { image: "./img/frustrated.png", message: "Jos vaan pysytään sisällä, sopiiko?", category: "seppo-walks" },
-    { image: "./img/laying2.png", message: "Tänään ei vaan huvittas lähteä", category: "seppo-walks" },
-    { image: "./img/pfff.png", message: "Taivaalta sataa pskaa, ja odotat mun lähtevän ulos??", category: "seppo-walks" },
-    { image: "./img/pfff.png", message: "Tänään me ei kuule ulkoilla", category: "seppo-walks" },
+    { image: "./img/butt.png", message: "Jee, nyt mennään", category: "seppo-random", category: "seppo-walks" },
+    { image: "./img/run.png", message: "Ulooooos, wuhuuu!", category: "seppo-random", category: "seppo-walks" },
+    { image: "./img/run.png", message: "Ulos pissalle, uuuulos pissalle, ouuuuuuu jeah!", category: "seppo-random", category: "seppo-walks" },
+    { image: "./img/frighten.png", message: "Ihan aivan totaalisen kamala keli!", category: "seppo-walks-deny" },
+    { image: "./img/frustrated.png", message: "Ei tuonne uskalla mennä.. oisko huomenna parempi keli?", category: "seppo-walks-deny" },
+    { image: "./img/frustrated.png", message: "Älä pliiiiiis pakota mua lähtee ulos tällä säällä", category: "seppo-walks-deny" },
+    { image: "./img/cry.png", message: "Jos vaan pysytään sisällä, sopiiko?", category: "seppo-walks-deny" },
+    { image: "./img/laying2.png", message: "Tänään ei vaan huvittas lähteä", category: "seppo-walks-deny" },
+    { image: "./img/pfff.png", message: "Taivaalta sataa pskaa, ja odotat mun lähtevän ulos??", category: "seppo-walks-deny" },
+    { image: "./img/pfff.png", message: "Tänään me ei kuule ulkoilla", category: "seppo-walks-deny" },
     // seppo-plays + seppo-plays-deny ( + some random)
     { image: "./img/play.png", message: "Leikitääks?", category: "seppo-random", category: "seppo-plays" },
     { image: "./img/run.png", message: "Et ikinä saa mua kiinni!", category: "seppo-random", category: "seppo-plays" },
@@ -101,16 +104,14 @@ function getRandomSeppoPairByCategory(category) {
 
     return filteredSeppos[randomIndex];
 }
-function updateRandomSeppoByCategory(category) {
-    var seppoContainers = document.getElementsByClassName("seppo-container " + category);
+function updateRandomSeppoByCategory(container, category) {
+    var seppoContainer = document.getElementById(container);
 
-    if (seppoContainers.length > 0) {
-        var randomIndex = Math.floor(Math.random() * seppoContainers.length);
-        var randomSeppoContainer = seppoContainers[randomIndex];
-
+    if (seppoContainer !== null) {
+        
         var randomSeppoPair = getRandomSeppoPairByCategory(category);
 
-        randomSeppoContainer.innerHTML = `
+        seppoContainer.innerHTML = `
             <img class="tiny" src="${randomSeppoPair.image}" /> <br>
             <small>${randomSeppoPair.message}</small>
         `;
@@ -119,10 +120,3 @@ function updateRandomSeppoByCategory(category) {
     }
 }
 
-// siirrä sitä mukaa näitä omiin polkuihinsa ja random.js pitää pysyä kärjessä
-updateRandomSeppoByCategory("seppo-waiting");
-updateRandomSeppoByCategory("seppo-index");
-updateRandomSeppoByCategory("seppo-random");
-updateRandomSeppoByCategory("seppo-sleeps");
-updateRandomSeppoByCategory("seppo-plays");
-updateRandomSeppoByCategory("seppo-walks");

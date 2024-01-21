@@ -35,31 +35,61 @@
 
             <div id="container" class="shadow">
 
-                <div class="seppo-container seppo-walks">
+                <div id="seppo-container">
                     <!-- Random-Seppo -->
                 </div>
 
                 <div id="content">
-                    <h3>Ulkoile</h3>
-
+                    
                     <div class="page">
                         
-                        <p>Sepon kanssa pääsee ulkoilemaan ja Seppo näyttää vähän paikkoja. </p>
-                        <p>Enua on oltava riittävästi ulkoiluun ja sään on oltava hyvä, muuten Seppoa ei huvita mennä ulos.</p>
+                        <h3>Koira remmiin ja lenkille</h3>
+                        <p>Sepon kanssa voi liikkua Webbikylässä, kunhan sää sen sallii ja Sepolla on energiaa liikkumiseen.</p>
+                        <p><i>Vinkki: Lenkkeily kuluttaa melko paljon energiaa. Jos Seppoa väsyttää, niin voit kokeilla ruokkia sen.</i></p>
 
+
+                        <h4 class="story hide">Webbikylän seikkailu</h4>
+                        <p class="story hide">Nenä käy ja häntä vispaa, kun lähdetään liikkeelle Webbikylässä. Ensin Seppo tekee virtuaalipisut kotinsa nurkkaan ja siitä matka jatkuu kohti Emoji-puistoa.</p>
+                        <p class="story hide">Muutama koirakko tulee vastaan ja Seppo päästää äänekkäät haukut heille. Ei kovin hyvätapaista, mutta rutiini ja tottumus sanelevat pitkälti sen, mitä Seppo lenkkeillessä tekee eri tilanteissa.</p>
+                        <p class="story hide">Kun päästään Emoji-puistolle, niin jokaisen ajassa kiinni olevan ja trendikkään sydän vähän leimahtaa. Emojien sulosointu täyttää siellä taivaan ja värit ovat mitä ihmeellisimmät. Seppo nappaa ilmasta kiinni violetin sydän emojin, <span class="custom-emoji-55"></span>, ja tuo sen iloisena sinulle. Hän on ylpeä saaliistaan, ja osoittaa sen antamalla sinulle, että olet tärkeä.</p>
+                        <p class="story hide">Hetken aikaa katseltuanne emojien tanssahtelevaa nyanssia, te päätätte jatkaa Sepon kanssa matkaa. Lähdette kiemurtelevaa polkua pitkin eteenpäin, ja juuri kun Emoji-puiston lepatus on jäämässä hyvän matkan taaksenne, niin saavutte Hakukenttä-aukiolle. </p>
+                        <p class="story hide">Täällä riittääkin tehtävää ja tekemistä, sillä Seppo on oikea hakumestari. Seppo ryhtyykin heti hakemaan yleisimpiä hakutuloksia. Niiden kanssa tovin kahlattuaan Seppo alkaa olla jo uupunut. </p>
+                        <p class="story hide">Päätätte, että tällä kertaa lenkki jää tähän määrään, ja lähdette tarpomaan takaisin kohti Sepon kotia.  </p>
+                        <p class="story hide">"Ehkä käydään Välilehtitorilla ensi kerralla? Voitaisiin vaikka tilata minulle jokin hyvä herkku!", Seppo tuumaa.</p>
+                        <p class="story hide">Ehkäpä voitte tosiaan. Sepolla oli lenkillä oikein mukavaa kanssasi, ja nyt sitä väsyttää melkoisesti! </p>
+
+                    </div>
+                    <div class="aside">
+                        <h5>Sepon sääpalvelu</h5>
+                        <p><span id="weather"></span>
+                            <span id="rain"></span>
+                            <span id="cloud"></span>
+                            <span id="snow"></span>
+                            <span id="sun"></span>
+                            <span id="wind"></span>
+                        <p id="desTemperature"></p>
+                        <p id="desTemperatureAlert"></p>
+                        <p id="desWind"></p>
+                        <p id="desSpeed"></p>
+                        <p id="desRain"></p>
+                        <p id="desSnow"></p>
+                        <p id="desSnowHeavy"></p>
+                        <p id="desSun"></p>
+                        <p id="desCloud"></p>
+                        <p id="desTemperature"></p>
+                        
                     </div>
 
                 </div>
-
             </div>
 
         <div id="footer"></div>
 
-        <script src="./js/store-health.js"></script>
+        <script src="./js/seppo.js"></script>
         <script src="./js/random.js"></script>
-
-        <script src="./js/feed-seppo.js"></script>
-        <script src="./js/ballgame.js"></script>
+        <script src="./js/yourAPI.js"></script>
+        <script src="./js/getweather.js"></script>
+        <script src="./js/walk-with-seppo.js"></script>
         
     </body>
 </html>

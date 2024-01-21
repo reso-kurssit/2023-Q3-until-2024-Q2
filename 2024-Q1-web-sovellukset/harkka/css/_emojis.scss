@@ -1,7 +1,7 @@
 /* Unicode-hex v 15.1 */
 
 $emoji-font-family: 'Noto Color Emoji', sans-serif;
-$emoji-font-size: 24px;
+$emoji-font-size: 28px;
 
 @mixin emoji-style($content) {
     &::before {
@@ -12,7 +12,7 @@ $emoji-font-size: 24px;
   }
 
 .custom-emoji-1 {
-  @include emoji-style("\1F92D"); 
+  @include emoji-style("\1F50D"); 
 }
 
 .custom-emoji-2 {
@@ -191,6 +191,141 @@ $emoji-font-size: 24px;
 .custom-emoji-49 {
   @include emoji-style("\1F60D"); 
 }
+
+
+//Sääolosuhteet
+
+.custom-emoji-50 {
+  @include emoji-style("\1F4A8"); 
+}
+
+.custom-emoji-51 {
+  @include emoji-style("\2600"); 
+}
+
+.custom-emoji-52 {
+  @include emoji-style("\1F327"); 
+}
+
+.custom-emoji-53 {
+  @include emoji-style("\2744"); 
+}
+
+.custom-emoji-54 {
+  @include emoji-style("\2601"); 
+}
+
+// Muut
+
+.custom-emoji-55 {
+  @include emoji-style("\1F49C"); 
+}
+
+.custom-emoji-56 {
+  @include emoji-style("\1F9F7"); 
+}
+
+.custom-emoji-57 {
+  @include emoji-style("\1F9FB"); 
+}
+
+.custom-emoji-58 {
+  @include emoji-style("\1F9FA"); 
+}
+
+.custom-emoji-59 {
+  @include emoji-style("\1F911"); 
+}
+
+.custom-emoji-60 {
+  @include emoji-style("\1F5D2"); 
+}
+
+.custom-emoji-61 {
+  @include emoji-style("\1F4B0"); 
+}
+
+.custom-emoji-62 {
+  @include emoji-style("\1F4DC"); 
+}
+
+.custom-emoji-63 {
+  @include emoji-style("\1F4FA"); 
+}
+
+.custom-emoji-64 {
+  @include emoji-style("\1F4BF"); 
+}
+
+.custom-emoji-65 {
+  @include emoji-style("\1F4F1"); 
+}
+
+.custom-emoji-66 {
+  @include emoji-style("\1F3B7"); 
+}
+
+.custom-emoji-67 {
+  @include emoji-style("\1F48E"); 
+}
+
+.custom-emoji-68 {
+  @include emoji-style("\1F9E2"); 
+}
+
+.custom-emoji-69 {
+  @include emoji-style("\1F460"); 
+}
+
+.custom-emoji-70 {
+  @include emoji-style("\1F45F"); 
+}
+
+.custom-emoji-71 {
+  @include emoji-style("\1F45E"); 
+}
+
+.custom-emoji-72 {
+  @include emoji-style("\1F461"); 
+}
+
+.custom-emoji-73 {
+  @include emoji-style("\1F576"); 
+}
+
+.custom-emoji-74 {
+  @include emoji-style("\1F9F6"); 
+}
+
+.custom-emoji-75 {
+  @include emoji-style("\1F9F8"); 
+}
+
+.custom-emoji-76 {
+  @include emoji-style("\1F94E"); 
+}
+
+.custom-emoji-77 {
+  @include emoji-style("\1F3C0"); 
+}
+
+.custom-emoji-78 {
+  @include emoji-style("\1F3C6"); 
+}
+
+
+
+
+// cloud 2601
+// halfsunny 26C5
+// thunder 26C8
+// halfsunny2  1F324
+
+// sunny 2600   emoji 51
+// rainy 1F327 emoji52
+// snow 1F328 emoji53
+
+
 
 
 // Jemmaan esim. ruoka- ja juomaemojit, maisemat, paikat
