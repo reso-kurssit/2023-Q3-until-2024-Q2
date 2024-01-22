@@ -1,0 +1,12 @@
+//
+// Lisää kaikki alla luetellut " const " -alkuiset rivit tiedostoon:
+// yourApi.js
+//
+// Sekä vie kyseinen tiedosto kansioon: 
+// js
+//
+// Korjaa kohtiin (2kpl) " [APIKEY-tähän] " -tilalle oma avaimesi 
+
+const apiKey = '[APIKEY-tähän]';
+const city = 'Helsinki';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Helsinki,fi&APPID=[APIKEY-tähän]';

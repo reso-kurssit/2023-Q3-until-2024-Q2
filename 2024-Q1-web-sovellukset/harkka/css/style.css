@@ -294,6 +294,24 @@
   content: "☁";
 }
 
+.custom-emoji-79::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 28px;
+  content: "⛅";
+}
+
+.custom-emoji-80::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 28px;
+  content: "🌫";
+}
+
+.custom-emoji-81::before {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-size: 28px;
+  content: "⛈";
+}
+
 .custom-emoji-55::before {
   font-family: "Noto Color Emoji", sans-serif;
   font-size: 28px;
@@ -460,7 +478,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 #header img {
   z-index: 1;
 }
@@ -496,7 +513,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-#container .content-box {
+#container .content-box, #container #seppo-container {
   padding: 10px;
   margin: 0 auto;
   margin-top: 10px;
@@ -504,21 +521,7 @@ body {
   text-align: center;
   align-items: center;
   width: 35%;
-  border: 2px solid #d77809;
-  border-radius: 8px;
-  font-weight: 600;
-  font-style: italic;
-  color: #131b39;
-}
-#container #seppo-container {
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 10px;
-  background-color: #f8e4cc;
-  text-align: center;
-  align-items: center;
-  width: 35%;
-  border: 2px solid #d77809;
+  border: 2px solid #dab05e;
   border-radius: 8px;
   font-weight: 600;
   font-style: italic;
@@ -549,11 +552,6 @@ body {
   cursor: pointer;
 }
 
-img.tiny {
-  border: 1px dashed #2c2c2c;
-  border-radius: 8px;
-}
-
 .page {
   padding-left: 30px;
   padding-right: 50px;
@@ -565,6 +563,11 @@ img.tiny {
   margin-right: 20px;
   border-left: 1px dashed #9a9a9a;
   padding-left: 22px;
+}
+
+img.tiny {
+  border: 1px dashed #2c2c2c;
+  border-radius: 8px;
 }
 
 .hide {
@@ -622,17 +625,6 @@ span:hover {
   color: #9ccbfc;
 }
 
-@keyframes colorWave {
-  0% {
-    color: #722457;
-  }
-  50% {
-    color: #1b3857;
-  }
-  100% {
-    color: #722457;
-  }
-}
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 3.8em;
@@ -649,7 +641,6 @@ h2 {
   font-family: "Archivo Narrow", sans-serif;
   font-size: 2em;
   color: #722457;
-  animation: colorWave 5s infinite linear;
 }
 
 h3 {
@@ -701,11 +692,11 @@ input {
 }
 
 input:focus {
-  background-color: #dce5f4;
+  background-color: #9ccbfc;
 }
 
 button {
-  background-color: #284784;
+  background-color: #284871;
   font-size: 0.9em;
   color: #ffffff;
   margin-top: 30px;

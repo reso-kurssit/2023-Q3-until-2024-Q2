@@ -20,3 +20,4 @@ function useRandomImages() {
 function useSleepImages() {
     updateRandomSeppoByCategory('seppo-container', 'seppo-sleeps');
 }
+
