@@ -1,5 +1,35 @@
 @import "emojis";
 
+$dancing: 'Dancing Script', cursive;
+$archivo: 'Archivo Narrow', sans-serif;
+$segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$shadow1: 2px 2px 4px rgba(0, 0, 0, 0.5);
+$shadow2: 0px 0px 10px rgba(0, 0, 0, 0.5);
+$wave: 5s infinite linear;
+$trlate50: translateX(-50%);
+$black: #000000;
+$orangeStrong: #d85b00;
+$orangeBright: #d77809;
+$orangeMid: #e08918;
+$orangeLight: #dab05e;
+$greenDark: #1d3c10;
+$greenLight: #5fb438;
+$greyDark: #2c2c2c;
+$greyLight: #9a9a9a;
+$blueDeep: #02142c;
+$blueStrong: #14283e;
+$blueDark: #14345e;
+$blueAsh:#284871;
+$blueBright: #095fcf;
+$blueMid: #6d8dcb;
+$blueLight: #9ccbfc;
+$peach: #f8e4cc;
+$plum: #722457;
+$borderStrong: 2px solid;
+$borderLight: 1px solid;
+$borderVeryLight: 1px dashed;
+$linearblue: linear-gradient(to right, $blueBright, $blueDark); 
+
 body {
     justify-content: center;
     align-items: center;
@@ -7,7 +37,7 @@ body {
     width: 100wh;
     margin: 0;
     background-color: #e6e6e6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $segoe;
     font-size: 1.2em;
 }
 
@@ -21,10 +51,10 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
-}
 
-#header img {
-    z-index: 1; 
+    img {
+        z-index: 1; 
+    }
 }
 
 #colorbar {
@@ -33,9 +63,9 @@ body {
     left: 0;
     height: 190px; 
     width: 100vw;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    background: linear-gradient(to right, #095fcf, #14345e); 
+    border-top: $borderStrong $black;
+    border-bottom: $borderStrong $black;
+    background: $linearblue;
     z-index: 2; 
     opacity: 0.9;
 }
@@ -50,6 +80,7 @@ body {
     justify-content: center; 
     background-color: #ffffff;
     overflow: hidden;
+
     #content {
         padding-left: 20px;
         padding-right: 20px; 
@@ -57,29 +88,16 @@ body {
         display: flex;
         flex-direction: row;
     }
-    .content-box {
+
+    .content-box, #seppo-container {
         padding: 10px;
         margin: 0 auto;
         margin-top: 10px;
-        background-color: #f8e4cc;
+        background-color: $peach;
         text-align: center;
         align-items: center;
         width: 35%;
-        border: 2px solid #d77809;
-        border-radius: 8px;
-        font-weight: 600;
-        font-style: italic;
-        color: #131b39;
-    }
-    #seppo-container {
-        padding: 10px;
-        margin: 0 auto;
-        margin-top: 10px;
-        background-color: #f8e4cc;
-        text-align: center;
-        align-items: center;
-        width: 35%;
-        border: 2px solid #d77809;
+        border: $borderStrong $orangeLight;
         border-radius: 8px;
         font-weight: 600;
         font-style: italic;
@@ -90,30 +108,26 @@ body {
 #ballgame {
     position: relative;
     padding-top: 60px;
+
     #ballgame-jump {
         position: absolute;
         bottom: 0;
         left: 80%;
-        transform: translateX(-50%);
+        transform: $trlate50;
         transition: transform 0.3s;
     }
     #ballgame-ball {
         position: absolute;
         bottom: 100px;
         left: 80%;
-        transform: translateX(-50%);
+        transform: $trlate50;
         width: 50px;
         height: 50px;
-        background-color: #5fb438;
-        border: 2px solid #1d3c10;
+        background-color: $greenLight;
+        border: $borderStrong $greenDark;
         border-radius: 50%;
         cursor: pointer;
     }
-}
-
-img.tiny {
-    border: 1px dashed #2c2c2c;
-    border-radius: 8px;
 }
 
 .page {
@@ -125,8 +139,13 @@ img.tiny {
     margin: 0 auto;
     width: 20%;
     margin-right: 20px;
-    border-left: 1px dashed #9a9a9a;
+    border-left: $borderVeryLight $greyLight;
     padding-left: 22px; 
+}
+
+img.tiny {
+    border: $borderVeryLight $greyDark;
+    border-radius: 8px;
 }
 
 .hide {
@@ -135,10 +154,10 @@ img.tiny {
 
 ul.navi {
     list-style-type: none;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: $archivo;
     font-size: 2em;
     color: #ffffff;
-    animation: headerWave 5s infinite linear;
+    animation: headerWave $wave;
     position: absolute;
     text-align: center; 
     top: 500px;
@@ -153,7 +172,7 @@ ul.navi li {
 ul a {
     text-decoration: none;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: $shadow1;
 }
 
 ul a:hover {
@@ -167,42 +186,30 @@ a {
 
 @keyframes headerWave {
     0% {
-        color: #e08918;
+        color: $orangeMid;
     }
     50% {
-        color: #dab05e;
+        color: $orangeLight;
     }
     100% {
-        color: #e08918;
+        color: $orangeMid;
     }
 }
 
 span {
-    color: #14283e;
+    color: $blueStrong;
 }
 
 span:hover {
-    color: #9ccbfc;
-}
-
-@keyframes colorWave {
-    0% {
-        color: #722457;
-    }
-    50% {
-        color: #1b3857;
-    }
-    100% {
-        color: #722457;
-    }
+    color: $blueLight;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: $dancing;
     font-size: 3.8em;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: headerWave 5s infinite linear;
+    text-shadow: $shadow1;
+    animation: headerWave $wave;
     position: absolute;
     text-align: center; 
     top: 385px;
@@ -210,38 +217,37 @@ h1 {
 }
 
 h2 {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: $archivo;
     font-size: 2em;
-    color: #722457;
-    animation: colorWave 5s infinite linear;
+    color: $plum;
 }
 
 h3 {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: $archivo;
     font-size: 2em;
-    color: #d85b00;
+    color: $orangeStrong;
 }
 
 h4 {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: $archivo;
     font-size: 2em;
-    color: #284871;
+    color: $blueAsh;
 }
 
 h5 {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: $archivo;
     font-size: 1.2em;
-    color: #284871;
+    color: $blueAsh;
 }
 
 .shadow {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow2;
     overflow: hidden;
 }
 
 #healthbar {
     height: 25px;
-    border: 1px solid #000000;
+    border: $borderLight $black;
     max-width: 200px;
     #current-health {
         height: 25px;
@@ -249,7 +255,7 @@ h5 {
         transition: width 0.5s;
         #healthtext {
             padding: 85px;
-            color: #000000;
+            color: $black;
         }
     }
 }
@@ -265,11 +271,11 @@ input {
 }
 
 input:focus {
-    background-color: #dce5f4;
+    background-color: $blueLight;
 }
 
 button {
-    background-color: #284784;
+    background-color: $blueAsh;
     font-size: 0.9em;
     color: #ffffff;
     margin-top: 30px;
@@ -278,8 +284,7 @@ button {
 }
 
 button:hover {
-    background-color: #6d8dcb;
+    background-color: $blueMid;
 }
-  
 
 @import "media-query";

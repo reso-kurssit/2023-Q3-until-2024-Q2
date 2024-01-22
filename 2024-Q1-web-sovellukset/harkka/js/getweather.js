@@ -3,8 +3,7 @@ function getWeather() {
   fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-      // pilvisyys, sademäärä ja tuulen nopeus vaikkapa
-      const temperature = Math.round(data.main.temp - 273.15); // celsius-asteina
+      const temperature = Math.round(data.main.temp - 273.15);
       const weatherDescription = data.weather[0].description;
       const windSpeed = data.wind.speed;
       const snowfall = data.snowfall;
@@ -14,39 +13,47 @@ function getWeather() {
       setTemperature(temperature);
       setWindSpeed(windSpeed);
 
-      updateWeatherDescriptions(temperature, weatherDescription, windSpeed, snowfall, clouds, visibility);
+      updateWeatherDescriptions(temperature, weatherDescription, windSpeed, clouds, visibility);
       updateSeppoState(temperature, weatherDescription, windSpeed, snowfall, visibility);
     })
     .catch(error => {
-      console.error('Virhe säätietojen hakemisessa:', error);
+      console.error('säätietojen haku feilasi', error);
     });
 }
 
-function updateWeatherDescriptions(temperature, weatherDescription, windSpeed, snowfall, clouds, visibility) { 
-  if (clouds) {
+function updateWeatherDescriptions(temperature, weatherDescription, windSpeed, clouds, visibility) { 
+  if (clouds['all'] < 5) {
+    setWeatherClear();
+  } else if (clouds['all'] > 50) {
     setWeatherCloud();
+  } else {
+    setWeatherFewClouds();
   }
-  if (weatherDescription.includes('clear')) {
-    // setWeatherBlaablaa();
-  }
-  if (weatherDescription.includes('sun')) {
-    // setWeatherBlaablaa();
-  }
+
   if (snow) {
     setWeatherSnow();
+  } else if (snow['1h'] > 6) {
+    setWeatherSnowHeavy();
   }
-  if (weatherDescription.includes('thunder')) {
-    // setWeatherBlaablaa();
+
+  if (weatherDescription.includes('mist')) {
+    setWeatherMist();
   }
+
   if (weatherDescription.includes('rain')) {
     setWeatherRain();
+  } else if (weatherDescription.includes('thunderstorm')) {
+    setWeatherStorm();
   }
+
   if (windSpeed > 11) {
     setWeatherWindHeavy();
   }
+
   if (visibility && visibility < 1000) {
-    // setWeatherBlaablaa();
+    setWeatherWeakVisibility();
   }
+  
   if (temperature < -20 || temperature > 30) { 
     setTemperatureAlert();
   }
@@ -73,7 +80,7 @@ function updateSeppoState(temperature, weatherDescription, windSpeed, snowfall, 
       weatherIsOk = false;
     }
 
-    if (windSpeed > 11) {
+    if (windSpeed > 24) {
       console.log('Tuulee kovaa!');
       weatherIsOk = false;
     }
@@ -112,29 +119,48 @@ function setWeatherWindHeavy() {
   document.getElementById('desWind').innerHTML = '';
 }
 
-function setWeatherSunny() {
-  document.getElementById('weather').classList.add('custom-emoji-51');
-  document.getElementById('desSun').innerHTML = 'Aurinkoista ja selkeää';
-}
-
 function setWeatherSnow() {
   document.getElementById('snow').classList.add('custom-emoji-53');
   document.getElementById('desSnow').innerHTML = 'Lumisadetta';
 }
 
 function setWeatherSnowHeavy() {
-  document.getElementById('weather').classList.add('custom-emoji-53');
+  document.getElementById('snow').classList.add('custom-emoji-53');
   document.getElementById('desSnowHeavy').innerHTML = 'Runsasta lumisadetta';
 }
 
 function setWeatherRain() {
-  document.getElementById('weather').classList.add('custom-emoji-52');
+  document.getElementById('rain').classList.add('custom-emoji-52');
   document.getElementById('desRain').innerHTML = 'Sateista';
 }
 
 function setWeatherCloud() {
-  document.getElementById('weather').classList.add('custom-emoji-54');
-  document.getElementById('desRain').innerHTML = 'Pilvistä';
+  document.getElementById('cloud').classList.add('custom-emoji-54');
+  document.getElementById('desCloud').innerHTML = 'Pilvistä';
+}
+
+function setWeatherFewClouds() {
+  document.getElementById('cloud').classList.add('custom-emoji-79');
+  document.getElementById('desCloud').innerHTML = 'Puolipilvistä';
+}
+
+function setWeatherClear() {
+  document.getElementById('cloud').classList.add('custom-emoji-51');
+  document.getElementById('desCloud').innerHTML = 'Selkeää';
+}
+
+function setWeatherMist() {
+  document.getElementById('mist').classList.add('custom-emoji-80');
+  document.getElementById('desMist').innerHTML = 'Sumuista';
+}
+
+function setWeatherStorm() {
+  document.getElementById('storm').classList.add('custom-emoji-81');
+  document.getElementById('desStorm').innerHTML = 'Myrskyisää';
+}
+
+function setWeatherWeakVisibility() {
+  document.getElementById('esVisibilityAlert').innerHTML = 'Heikko näkyvyys';
 }
 
 function setTemperatureAlert() {

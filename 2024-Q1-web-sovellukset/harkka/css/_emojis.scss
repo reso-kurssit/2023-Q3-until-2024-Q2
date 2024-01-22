@@ -192,7 +192,6 @@ $emoji-font-size: 28px;
   @include emoji-style("\1F60D"); 
 }
 
-
 //Sääolosuhteet
 
 .custom-emoji-50 {
@@ -213,6 +212,18 @@ $emoji-font-size: 28px;
 
 .custom-emoji-54 {
   @include emoji-style("\2601"); 
+}
+
+.custom-emoji-79 {
+  @include emoji-style("\26C5"); 
+}
+
+.custom-emoji-80 {
+  @include emoji-style("\1F32B"); 
+}
+
+.custom-emoji-81 {
+  @include emoji-style("\26C8"); 
 }
 
 // Muut

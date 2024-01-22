@@ -8,13 +8,16 @@
 **Poluissa**
 - harkka
     - *Selainlemmikki Seppo:*
-    - *Päätin tehdä harjoitustyönä virtuaalisen koirakamun, jonka nimi on Seppo.*
-    - *Seppo tarvitsee ruokaa, jotta terveyspalkki kasvaa aktiviteetteihin.*
-    - *Terveyspalkin tilanne tallennetaan local storageen.*
-    - *Sepolla on "mielialoja" ja se ilmaisee, esimerkiksi seuraavasti;*
-    - *Jos ei suostu syömään jotain ruokaa tai halua lähteä ulos (huono sää) tai jaksa puuhastella (energiavaje).*
-    - *Reaktiot myös onnistumisiin, random-seppo-toimintoa yms.*
+    - *Päätin tehdä harjoitustyönä virtuaalikoiran, jonka nimi on Seppo*
+    - *Seppo tarvitsee ruokaa, jotta terveyspalkki kasvaa aktiviteetteihin*
+    - *Terveyspalkin tilanne tallennetaan local storageen*
+    - *Sepolla on "mielialoja" ja se niitä lmaisee esimerkiksi seuraavasti;*
+    - *Jos ei suostu syömään jotain ruokaa (inhokit) tai halua lähteä ulos (huono sää) tai jaksa puuhastella (energiavaje)*
+    - *Reaktiot myös onnistumisiin (lempiruoat, hyvä keli), sekä löytyy random-seppo ja "pelejä"*
     - *Responsiivisuutta haettu eri kokoisille ruuduille*
+    - *Säätietojen hakemiseen tarvitsee oman apikeyn*
+    - *Sen lisäämiseen tietoa about-api-key.txt -tiedostossa*
+    - *Youtube-video tästä työstä: https://youtu.be/g45a1e39u0o*
 - viikko1
     - *Hau-ska sivu:*
     - *Esittelyssä koira ja jotain*
