@@ -17,8 +17,8 @@
     - *Responsiivisuutta haettu eri kokoisille ruuduille*
     - *Säätietojen hakemiseen tarvitsee oman apikeyn*
         - Apikey sijoitetaan polkuun ./js/yourAPI.js muodossa:
-            const apiKey = 'APIKEY-TULEE-TÄHÄN';
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Tampere,fi&APPID=${apiKey}`;
+            *const apiKey = 'APIKEY-TULEE-TÄHÄN';*
+            *const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Tampere,fi&APPID=${apiKey}`;*
     - *Sen lisäämiseen ohjeistus erikseen myös about-api-key.txt -tiedostossa*
     - *Youtube-video tästä työstä: https://youtu.be/g45a1e39u0o*
 - viikko1
