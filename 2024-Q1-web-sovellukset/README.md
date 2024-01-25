@@ -16,7 +16,7 @@
     - *Reaktiot myös onnistumisiin (lempiruoat, hyvä keli), sekä löytyy random-seppo ja "pelejä"*
     - *Responsiivisuutta haettu eri kokoisille ruuduille*
     - *Säätietojen hakemiseen tarvitsee oman apikeyn*
-    - *Sen lisäämiseen tietoa about-api-key.txt -tiedostossa*
+    - *Sen lisäämiseen ohjeistus about-api-key.txt -tiedostossa*
     - *Youtube-video tästä työstä: https://youtu.be/g45a1e39u0o*
 - viikko1
     - *Hau-ska sivu:*
@@ -40,4 +40,6 @@
     - *Painter:*
     - *Oliota mukaan, ja tehtävänä piirto-ohjelma* 
 - viikko8
-    - _selite_ 
+    - *Weather:*
+    - *HTTP-yhteys taustajärjestelmään*
+    - *Säätiedot haetaan OpenWeatherMapista*
