@@ -1,0 +1,35 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+div {
+  margin: 0 auto;
+  width: 30%;
+  background-color: #fdfdfd;
+  border: 1px solid #333333;
+  padding: 32px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 1em;
+}
+
+h3 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.4em;
+  color: #010c6d;
+}
+
+.image-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  padding: 0;
+}/*# sourceMappingURL=styles.css.map */

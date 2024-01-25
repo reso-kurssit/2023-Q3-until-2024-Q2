@@ -4,7 +4,7 @@ function getWeather() {
     .then(response => response.json())
     .then(data => {
       const temperature = Math.round(data.main.temp - 273.15);
-      const weatherDescription = data.weather[0].description;
+      const weatherDescription = data.weather.map((entry) => entry.description).join(", ");
       const windSpeed = data.wind.speed;
       const snowfall = data.snowfall;
       const clouds = data.clouds;

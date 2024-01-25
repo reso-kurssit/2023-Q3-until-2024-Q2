@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div>
+
+            <h3>Weather on your location</h3>
+            <p> <span id="lat"></span> <span id="lng"></span> </p>
+            <p> Temperature <span id="temp"></span> </p>
+            <p> Wind speed <span id="speed"></span> </p>
+            <p> Wind direction <span id="direction"></span> </p>
+            <p> <span id="description"></span> </p>
+            <div class="image-wrapper">
+                <img src="" />
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/yourAPI.js"></script>
+        <script src="./js/functions.js"></script>
+
+    </body>
+</html>

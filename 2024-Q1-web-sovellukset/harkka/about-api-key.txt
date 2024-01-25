@@ -1,12 +1,13 @@
 //
-// Lisää kaikki alla luetellut " const " -alkuiset rivit tiedostoon:
+// Lisää alla luetellut " const " -alkuiset rivit (2kpl) tiedostoon:
 // yourApi.js
 //
 // Sekä vie kyseinen tiedosto kansioon: 
 // js
 //
-// Korjaa kohtiin (2kpl) " [APIKEY-tähän] " -tilalle oma avaimesi 
+// Korjaa tekstin APIKEY-TULEE-TÄHÄN -tilalle avaimesi, älä poista hipsuja
 
-const apiKey = '[APIKEY-tähän]';
-const city = 'Helsinki';
-const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Helsinki,fi&APPID=[APIKEY-tähän]';
+
+const apiKey = 'APIKEY-TULEE-TÄHÄN';
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Tampere,fi&APPID=${apiKey}`;
+
