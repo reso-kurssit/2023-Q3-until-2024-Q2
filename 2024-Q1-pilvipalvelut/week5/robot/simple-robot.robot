@@ -1,7 +1,16 @@
+*** Settings ***
+Library           OperatingSystem
+Library           String
+
+*** Variables ***
+${TESTS_FOLDER}=    ${CURDIR}${/}..${/}tests
+${FILE_NAME}      *.*
+
 *** Test Cases ***
-Verify Pushed File In Directory  ../tests
-${files}=  List Files In Directory  ../tests
-:FOR ${file}  IN  @{files}
-\  ${file_contents}=  Get File  ../tests/${file}
-\  Should Contain  ${file_contents}  tää
-\  Should Contain  ${file_contents}  toi
+Verify Pushed File Contains Words
+    ${files}=    List Directory    ${TESTS_FOLDER}
+    FOR    ${file}    IN    @{files}
+        ${file_contents}=    Get File    ${TESTS_FOLDER}${/}${file}
+        Should Contain    ${file_contents}    tää
+        Should Contain    ${file_contents}    toi
+    END
