@@ -4,13 +4,13 @@ on:
   push:
     paths:
     - '**/tests/**'
-    
+
 jobs:
     simple-robot-test:
         runs-on: ubuntu-latest
 
         steps: 
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v4
 
         - name: Install Dependencies
           run: |
@@ -19,3 +19,9 @@ jobs:
 
         - name: Run Robot Test
           run: robot -d 2024-Q1-pilvipalvelut/week5/robot/results 2024-Q1-pilvipalvelut/week5/robot
+
+        - name: Archive Robot Test Results
+          uses: actions/upload-artifact@v4
+          with:
+            name: robot-test-results
+            path: 2024-Q1-pilvipalvelut/week5/robot/results
