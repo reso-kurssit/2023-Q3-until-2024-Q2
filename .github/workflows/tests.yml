@@ -1,0 +1,21 @@
+name: Simple Robot Test run on every change in any tests directory
+
+on:
+  push:
+    paths:
+    - '**/tests/**'
+    
+jobs:
+    simple-robot-test:
+        runs-on: ubuntu-latest
+
+        steps: 
+        - uses: actions/checkout@v2
+
+        - name: Install Dependencies
+          run: |
+            pip install --upgrade pip
+            pip install robotframework
+
+        - name: Run Robot Test
+          run: robot -d 2024-Q1-pilvipalvelut/week5/robot/results 2024-Q1-pilvipalvelut/week5/robot
