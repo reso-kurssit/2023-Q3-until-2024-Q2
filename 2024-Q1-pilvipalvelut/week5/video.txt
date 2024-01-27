@@ -1,1 +1,3 @@
 Tehdään videota oppimispäiväkirjaan ja näytetään tämä lisäys gittiin
+
+Jatketaan, päivitetään tämä 
