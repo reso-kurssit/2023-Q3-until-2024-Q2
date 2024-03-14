@@ -6,7 +6,7 @@ const Home = () => {
     <div className="page">
       <h2>Tervetuloa Muuvi -palveluun! </h2>
 
-      <p className="read-the-docs">
+      <p>
         Muuvi on OAMK tietotekniikan opiskelijoiden tekemä elokuvasovellusprojekti. Tarkoituksena on luoda leffaharrastajille sivusto. <br/>
         Sovellus hyödyntää avoimen datan lähteitä ja sille tehdään oma palvelin ja tietokanta datan hallintaan. <br/>
       </p>
@@ -34,8 +34,7 @@ const Home = () => {
 
       <h2>Kirjautuminen</h2>
 
-      <p className="read-the-docs">
-
+      <p>
         Kirjautumisen alla rekisteröidy ja kirjaudu sisään. <br/>
         Onnistuneen kirjautumisen jälkeen voisi kirjautuminen -linkin korvata: <br/>
         Oma tili + Kirjaudu ulos<br/>

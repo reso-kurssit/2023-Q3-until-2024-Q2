@@ -10,8 +10,7 @@ const Community = () => {
   <div className="page">
       <h2>Yhteisö</h2>
 
-      <p className="read-the-docs">
-        Yhteisö-sivun alla arvostelut ja ryhmät.</p>
+      <p>Yhteisö-sivun alla arvostelut ja ryhmät.</p>
 
         {<Groups />}
 

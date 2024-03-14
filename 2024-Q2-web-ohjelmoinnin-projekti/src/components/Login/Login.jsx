@@ -6,8 +6,6 @@ const Login = () => {
 
     <div className="page">
 
-        <h2>Rekisteröityminen ja kirjautuminen</h2>
-
         {<Register />}
 
         <h2>Kirjaudu</h2>

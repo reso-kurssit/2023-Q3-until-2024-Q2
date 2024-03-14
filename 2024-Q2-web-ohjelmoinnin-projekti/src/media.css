@@ -1,22 +1,12 @@
 
+@media (max-width: 1200px) {
+  #colorbar .header-container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1250px)  {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    button {
-      background-color: #f1c55b;
-    }
-    .read-the-docs {
-      color: #000000;
-    }
-    .gh-mark {
-      background-image: url('./images/github-mark.png');
-    }
-  
+
     .page {
       padding: 2rem;
     }
@@ -41,17 +31,17 @@
     }
     
     #content {
-      margin-top: 100px;
+      margin-top: 80px;
       width: 100%;
     }
   
   }
   
   @media (max-width: 920px)  {
+
     #colorbar .header-container {
       margin: 0 auto;
       display: block;
-      max-width: 1300px;
       place-items: center;
     }
   
@@ -77,7 +67,7 @@
     }
   
     #content {
-      margin-top: 80px;
+      margin-top: 50px;
     }
   
     .page {
@@ -87,8 +77,13 @@
   }
   
   @media (max-width: 320px)  {
+
     #screen-error {
       display: block;
+    }
+
+    .body {
+      background-color: #ffffff;
     }
   
     #container, .page, #footer {
@@ -102,5 +97,9 @@
       font-size: 3.2em;
       color: #fab000;
     }
+
+    h2, h3 {
+      color: #000000;
+    }
+
   }
-  
