@@ -1,0 +1,106 @@
+
+@media (max-width: 1250px)  {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f1c55b;
+    }
+    .read-the-docs {
+      color: #000000;
+    }
+    .gh-mark {
+      background-image: url('./images/github-mark.png');
+    }
+  
+    .page {
+      padding: 2rem;
+    }
+  
+    #colorbar {
+      width: 100%;
+    }
+  
+    #colorbar h1 {
+      margin-left: 40px;
+      font-size: 2.9em;
+    }
+    
+    #colorbar ul.navi {
+      padding-top: 13px;
+      margin-right: 30px;
+      font-size: 1.3em;
+    }
+  
+    #colorbar ul.navi li {
+      padding-right: 50px;
+    }
+    
+    #content {
+      margin-top: 100px;
+      width: 100%;
+    }
+  
+  }
+  
+  @media (max-width: 920px)  {
+    #colorbar .header-container {
+      margin: 0 auto;
+      display: block;
+      max-width: 1300px;
+      place-items: center;
+    }
+  
+    #colorbar {
+      height: 320px;
+    }
+  
+    #colorbar h1 {
+      margin: 0 auto;
+      padding-top: 33px;
+      font-size: 3em;
+    }
+    
+    #colorbar ul.navi {
+      margin: 0 auto;
+      display: block;
+      padding-top: 13px;
+      font-size: 1.1em;
+    }
+  
+    #colorbar ul.navi li {
+      align-items: center;
+    }
+  
+    #content {
+      margin-top: 80px;
+    }
+  
+    .page {
+      padding: 1rem;
+    }
+    
+  }
+  
+  @media (max-width: 320px)  {
+    #screen-error {
+      display: block;
+    }
+  
+    #container, .page, #footer {
+      display: none;
+    }
+  
+    h1 {
+      font-family: "Rock Salt", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3.2em;
+      color: #fab000;
+    }
+  }
+  
