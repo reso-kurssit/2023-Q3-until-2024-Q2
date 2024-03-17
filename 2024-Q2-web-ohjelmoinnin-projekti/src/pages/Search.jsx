@@ -1,5 +1,5 @@
 import React from 'react';
-import Shows from '../Shows/Shows';
+import Shows from '@content/Shows';
 
 const Search = () => {
   return (
