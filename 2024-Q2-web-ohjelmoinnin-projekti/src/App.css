@@ -143,7 +143,6 @@ body {
   margin-right: 1em;
 }
 
-
 .info {
   margin-left: 1em;
   padding: 0.5em;
@@ -164,4 +163,21 @@ body {
   background-image: var(--github-image);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.green {
+  background-color: #126025;
+  color: #ffffff;
+}
+
+.red {
+  background-color: #8d1209;
+  color: #ffffff;
+}
+
+.movieBg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
 }

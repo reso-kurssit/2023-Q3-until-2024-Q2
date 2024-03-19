@@ -1,17 +1,13 @@
 import React from 'react';
+import Movies from '@content/Movies';
 import Shows from '@content/Shows';
 
 const Search = () => {
   return (
     <div className="page">
-      <h2>Muuvihaku</h2>
-
-      <p>Hakukomponentissa tulee olla suodattimia vähintään kolme. Hakuominaisuudella voi hakea elokuvia ja sarjoja. </p>
-
-      {<Shows />}
-
+      <Movies />
+      <Shows />
     </div>
-    
   );
 };
 
