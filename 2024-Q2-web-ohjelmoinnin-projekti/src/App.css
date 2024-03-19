@@ -131,6 +131,27 @@ body {
   }
 }
 
+.field  {
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.box {
+  height: 130px;
+  width: 240px;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+
+.info {
+  margin-left: 1em;
+  padding: 0.5em;
+  border-left: 9px solid #e2ac0a;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .card {
   padding: 2em;
 }
