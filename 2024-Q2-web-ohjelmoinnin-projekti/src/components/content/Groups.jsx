@@ -12,13 +12,11 @@ const Groups = () => {
   }
 
   const search = () => {
-    // logiikka tähän
-    alert('Haku suoritettu!');
+    alert('click');
   }
 
   const create = () => {
-    // logiikka tähän
-    alert('Ryhmä luotu!');
+    alert('click');
   }
 
   return (
@@ -33,7 +31,7 @@ const Groups = () => {
           <button onClick={search}>Hae</button> <br/><br/>
 
       {!showCreateForm ? (
-        <a href="#" onClick={openCreateForm}>Tai luo uusi ryhmä</a>
+        <a onClick={openCreateForm}>Tai luo uusi ryhmä</a>
       ) : (
         <div id="createGroup">
           <b>Uusi ryhmä</b> (<a href="#" onClick={closeCreateForm }>Sulje</a>) <br/>
@@ -48,21 +46,21 @@ const Groups = () => {
 
       <h3>Ryhmät listana [a - z]</h3> 
 
-      <p><a href="#">Ryhmärämä</a></p>
-      <p><a href="#">komediahullut</a></p>
-      <p><a href="#">tosimiesklubi</a></p>
-      <p><a href="#">Stadin Muuvissa</a></p>
-      <p><a href="#">SOTA-leffat</a></p>
-      <p><a href="#">Dramaqueens</a></p>
-      <p><a href="#">kauhalla kauhuu</a></p>
-      <p><a href="#">Tampereen seudun leffailijat</a></p>
-      <p><a href="#">Leffatiistai</a></p>
-      <p><a href="#">Vain-sarjoja</a></p>
-      <p><a href="#">Suomalaista filmii</a></p>
-      <p><a href="#">lastenleffat</a></p>
+      <i>esimerkkejä vaan</i>
+      <p className="inner-1em"><a href="#">Ryhmärämä</a></p>
+      <p className="inner-1em"><a href="#">komediahullut</a></p>
+      <p className="inner-1em"><a href="#">tosimiesklubi</a></p>
+      <p className="inner-1em"><a href="#">Stadin Muuvissa</a></p>
+      <p className="inner-1em"><a href="#">SOTA-leffat</a></p>
+      <p className="inner-1em"><a href="#">Dramaqueens</a></p>
+      <p className="inner-1em"><a href="#">kauhalla kauhuu</a></p>
+      <p className="inner-1em"><a href="#">Tampereen seudun leffailijat</a></p>
+      <p className="inner-1em"><a href="#">Leffatiistai</a></p>
+      <p className="inner-1em"><a href="#">Vain-sarjoja</a></p>
+      <p className="inner-1em"><a href="#">Suomalaista filmii</a></p>
+      <p className="inner-1em"><a href="#">lastenleffat</a></p>
 
       <hr />
-
 
     </div>
   );

@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Register from '@content/Register';
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+export default function Login(props) {
+ const [username, setUsername] = useState('')
+ const [password, setPassword] = useState('')
+ const navigate = useNavigate()
 
-    const login = () => {
-      // logiikka tähän
-      alert('click');
-    }
+ const validate = (e) => {
+  e.preventDefault()
+  if (username === 'admin' && password === 'nappi') {
+    props.setUser({user: username, password: password})
+    navigate("/myaccount")
+
+  }
+
+ }
 
   return (
 
@@ -14,12 +23,17 @@ const Login = () => {
 
         <h2>Kirjautuminen</h2>
 
-        <p class="info">Älä koskaan jää käyttäjätunnusta ja salasanaasi ulkopuolisille.</p>
+        <p className="info">Älä koskaan jää käyttäjätunnusta ja salasanaasi ulkopuolisille.</p>
 
 
-        <p>Nimimerkki: <input className="field" type="text" placeholder="Valitse nimimerkki"></input></p>
-          <p>Salasana: <input className="field" type="text" placeholder="Valitse salasana"></input></p>
-          <button onClick={login}>Kirjaudu sisään</button> 
+        <div id="login-form">
+          <form onSubmit={validate}>
+            <p>Nimimerkki: <input className="field" value={username} onChange={e => setUsername(e.target.value)}></input></p>
+            <p>Salasana: <input className="field" type="password" value={password} onChange={e => setPassword(e.target.value)}></input></p>
+            <button>Kirjaudu sisään</button> 
+          </form>
+        </div>
+
 
           <br/> <br/>
 
@@ -31,5 +45,3 @@ const Login = () => {
 
   );
 };
-
-export default Login;

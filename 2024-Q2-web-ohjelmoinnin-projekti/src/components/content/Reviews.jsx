@@ -30,7 +30,7 @@ const Reviews = () => {
       <button onClick={searchReviews}>Hae</button> <br/><br/>
 
       {!showReviewForm ? (
-        <a onClick={openReviewForm}>Tai luo uusi arvostelu</a>
+        <a onClick={openReviewForm}>Tai luo uusi arvostelu (Avaa)</a>
       ) : (
         <div id="createReview">
           <b>Uusi arvostelu</b> (<a onClick={closeReviewForm}>Sulje</a>) <br/><br/>
